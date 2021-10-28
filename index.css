@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    overflow: hidden;
+    background-color: black;
+    padding: 20px 10px;
+
+}
+#header a{
+    float: left;
+    color: white;
+    text-align: centre;
+    padding: 12px;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+#header a.logo{
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px yellow,
+                0 0 2px yellow,
+                0 0 15px yellow;
+}
+
+#header a:hover{
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
+#header a:active{
+    background-color: blueviolet;
+    color: yellow;
+}
+
+#right_header{
+  float: right;
+}
+
+.bodypart{
+    width: 100%;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.89);
+}
+.footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-flow: row;
+    height: 200px;
+}
+.contact{
+    flex: 50%;
+   font-size: 20px;
+   text-align: center;
+   padding-top: 30px;
+}
+.contact h4{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 2px;
+}
+.contact p{
+    padding-top: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.social{
+    flex: 50%;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.social h4{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+ul li{
+  list-style-type: none;
+  position: relative;
+  display: block;
+  color: #666;
+  font-size: 30px;
+  height: 60px;
+  width: 60px;
+  background: #000000;
+  line-height: 60px;
+  border-radius: 50%;
+  margin: 0 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: .5s
+}
+ul li:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+    border-radius: 50%;
+    transform: scale(.9);
+    z-index: -1;
+    transition: .5s;
+  }
+  ul li:nth-child(1):before{
+    background: #b242b2;
+  }
+  ul li:nth-child(2):before{
+    background: #0b9df8;
+  }
+  ul li:nth-child(1):hover:before{
+    box-shadow: 0 0 15px #b242b2;
+  }
+  ul li:nth-child(2):hover:before{
+    box-shadow: 0 0 15px #049fff;
+  }
+  ul li:nth-child(1):hover{
+    color: #456cba;
+    box-shadow: 0 0 15px  #b242b2;
+    text-shadow: 0 0 15px  #b242b2;
+  }
+  ul li:nth-child(2):hover{
+    color: #26a4f2;
+    box-shadow: 0 0 15px #009dff;
+    text-shadow: 0 0 15px #0fa3ff;
+  }
+ 
+  .contact button{
+      width: 100px;
+      height: 40px;
+      background-color:white;
+      border-radius: 10%;
+      margin-top: 20px;
+      cursor: pointer;
+  }
+  .contact button{
+      text-decoration: none;
+      color: black;
+      font-weight: bolder;
+  }
+
+  .contact button:hover{
+      background-color: black;
+      color: white;
+      box-shadow: 0 0 0px white,
+      0 0 5px white,
+      0 0 10px white;
+
+  }
+
+.copyright{
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+}
